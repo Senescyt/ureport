@@ -41,15 +41,15 @@ SITE_ROOT = os.path.dirname(os.path.realpath(__file__))
 #                          MAIN CONFIGURATION                          #
 # -------------------------------------------------------------------- #
 BAD_WORDS = ['poop', ] #list of profanities
-TIME_ZONE = "Africa/Kampala"
+TIME_ZONE = "America/Bogota"
 EMAIL_HOST_USER = ''
 EMAIL_HOST = '127.0.0.1'
-OPT_IN_WORDS = ['join']
+OPT_IN_WORDS = ['join','ingresar','registrar']
 OPT_IN_WORDS_LUO=["donyo","dony","donyo","doyo",]
-OPT_IN_CONFIRMATION = gettext("Welcome to UReport! Ureport is a community of %(citizen)s youth that are dedicated to working for positive change in their communities. Stay tuned for more info.") % {"citizen": gettext("Ugandan")}
-OPT_IN_WEB_CONFIRMATION = gettext("CONGRATULATIONS!!! You are now a registered member of Ureport! With Ureport, you can make a real difference!  Speak Up and Be Heard! from UNICEF")
-OPT_OUT_WORDS = ['stop', 'unjoin', 'quit','giki']
-OPT_OUT_CONFIRMATION = gettext("Your UReport opt out is confirmed.If you made a mistake,or you want your voice to be heard again,text in JOIN and send it to 8500!All SMS messages are free")
+OPT_IN_CONFIRMATION = gettext("Bienvenido a Ureport")
+OPT_IN_WEB_CONFIRMATION = gettext("FELICIDADES!! Ahora Ud. es un nuevo miembre de Ureport")
+OPT_OUT_WORDS = ['stop', 'unjoin', 'quit','giki','salir']
+OPT_OUT_CONFIRMATION = gettext("Salida de Ureport confirmada")
 
 # map bounding box
 MIN_LON = '29.55322265625'
@@ -64,9 +64,8 @@ ADMINS = (
 
 
 LANGUAGES = (
-    ('ach', gettext('luo')),
     ('en', gettext('English')),
-
+    ('es', gettext('Spanish'))
 )
 
 # you should configure your database here before doing any real work.
