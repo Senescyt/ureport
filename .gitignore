@@ -2,7 +2,6 @@
 .pydevproject
 .settings
 *pyc
-localsettings.py
 *.swp
 *~
 build
