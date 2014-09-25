@@ -181,6 +181,7 @@ OPT_IN_WORDS = ["join","ingresar"]
 OPT_IN_WORDS_LUO=["donyo","dony","donyo","doyo",]
 OPT_IN_WORDS_KDJ=["togeu","togu",'tog']
 OPT_OUT_WORDS = ["quit","stop","unjoin","salir"]
+SPECIAL_CHARS_MAPPING = {"á": "a", "é": "e", "í": "i", "ó": "o", "ú": "u", "ñ": "n"}
 
 # map bounding box
 MIN_LON = '29.55322265625'
@@ -208,7 +209,7 @@ DATABASES = {
         'NAME': 'ureport',
         'HOST': 'db.ureport.org',
         'USER': 'postgres',
-	'ROUTER_URL':'http://kannel.ureport.org:13013/cgi-bin/sendsms?from=dev&username=dev&password=dev&text=%(text)s&to=%(recipient)s&smsc=%(backend)s',
+	'ROUTER_URL':'http://kannel.ureport.org:13013/cgi-bin/sendsms?from=1400&username=dev&password=dev&text=%(text)s&to=%(recipient)s&smsc=%(backend)s',
 #	'OPTIONS': {
  #     	'autocommit': True,
   # 	},
