@@ -209,7 +209,7 @@ DATABASES = {
         'NAME': 'ureport',
         'HOST': 'db.ureport.org',
         'USER': 'postgres',
-	'ROUTER_URL':'http://kannel.ureport.org:13013/cgi-bin/sendsms?from=1400&username=dev&password=dev&text=%(text)s&to=%(recipient)s&smsc=%(backend)s',
+	'ROUTER_URL':'http://kannel.ureport.org:13013/cgi-bin/sendsms?from=2501&username=dev&password=dev&text=%(text)s&to=%(recipient)s&smsc=%(backend)s',
 #	'OPTIONS': {
  #     	'autocommit': True,
   # 	},
